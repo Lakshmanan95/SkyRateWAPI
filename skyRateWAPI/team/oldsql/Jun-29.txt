@@ -1,0 +1,3 @@
+use skyrate;
+
+alter table messenger add column DEFAULT_MESSAGE int(1) default 0;

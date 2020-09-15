@@ -1,0 +1,9 @@
+ALTER TABLE `skyrate`.`feedback` 
+ADD COLUMN `USER_ID` INT(11) NOT NULL AFTER `FEEDBACK_DATE`;
+
+
+UPDATE `skyrate`.`user_alerts` SET `RESPONSE_YES_URL`='home' WHERE `ID`='2';
+UPDATE `skyrate`.`user_alerts` SET `RESPONSE_YES_URL`='home' WHERE `ID`='3';
+
+
+ALTER TABLE `skyrate`.`user_alerts_mapping` ADD COLUMN `business_id` INT NULL  AFTER `user_id` ;

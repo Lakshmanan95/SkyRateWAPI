@@ -1,0 +1,2 @@
+use skyrate;
+alter table category add column IMAGE_URL varchar(255) default 'popular1.jpg';

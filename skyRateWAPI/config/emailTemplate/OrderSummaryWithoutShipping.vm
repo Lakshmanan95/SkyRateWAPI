@@ -1,0 +1,68 @@
+<html>
+<head>
+</head>
+<body>
+<div class="container" style= " border:2px solid black; width:90%">
+<header>
+<div class="container">
+
+<img style="width:25%;" src="http://spice.cloubiot.com/app/img/Spice-logo.png"  alt="Spice Corner" />
+</div>
+</header>
+<hr>
+<h2 style="color:black; padding:5px">Thank you for your Order</h2>
+<p style="color:black; padding:5px">
+Your order has been received and is now being processed.Your order details are shown below for your reference:</p>
+<h2 style="color:black; padding:5px">Your Order #$order.id</h2><p style="color:black;"> <b>(placed on $order.orderDate)</b></p>
+<table style="width:100%;padding:5px;margin-bottom:15px;border:2px solid #a1a19b;color:black;border-collapse:collapse">
+<tbody>
+<tr>
+<th style="border:2px solid #a1a19b; border-collapse:collapse;color:black;background-color:#a1a19b;padding:10px;">Billing Information</th>
+<th style="border:2px solid #a1a19b; border-collapse:collapse;color:black;background-color:#a1a19b;padding:10px;">Payment Info</th>
+</tr>
+<tr>
+<td style="border:2px solid #a1a19b;border-collapse:collapse; color:black; padding:10px;"><b>$user.userName</b><br>
+ ${order.billingAddress.street}<br>
+ ${order.billingAddress.city}<br>
+${order.billingAddress.state}<br>
+${order.billingAddress.zipcode}<br>
+Ph.no:<b>${user.phoneNumber}</b></td>
+<td style="border:2px solid #a1a19b;border-collapse:collapse;color:black; padding:10px;">Payment method:<b> ${order.paymentMethod}</b><br>
+Subtotal:<b>$ ${order.totalPrice}</b></td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 style="color:black; padding:2px;">Items Ordered</h3>
+<div class="container">
+<table style="width:100%;padding:5px;margin-bottom:15px;border:2px solid #a1a19b; color:black;border-collapse:collapse">
+<tr>
+<th style="border:2px solid #a1a19b; border-collapse:collapse;color:black;background-color:#a1a19b;padding:10px;">Item</th>
+<th style="border:2px solid #a1a19b; border-collapse:collapse;color:black;background-color:#a1a19b;padding:10px;">Quantity</th>
+<th style="border:2px solid #a1a19b; border-collapse:collapse;color:black;background-color:#a1a19b;padding:10px;">Price</th>
+<th style="border:2px solid #a1a19b; border-collapse:collapse;color:black;background-color:#a1a19b;padding:10px;">Total Price</th>
+</tr>
+#foreach( $orderDetail in $order.OrderDetail )
+<tr>
+
+<td style="border:2px solid #a1a19b;border-collapse:collapse;color:black; padding:10px;"><b>$orderDetail.productName</b></td>
+<td style="border:2px solid #a1a19b;border-collapse:collapse; color:black;padding:10px;">$orderDetail.quantity </td>
+<td style="border:2px solid #a1a19b;border-collapse:collapse; color:black;padding:10px;">${orderDetail.price}</td>
+<td style="border:2px solid #a1a19b;border-collapse:collapse; color:black;padding:10px;">#set ($mul= ${orderDetail.quantity} * ${orderDetail.price})
+$mul</td>
+#end
+</tr>
+<tr>
+<td style="border:2px solid #a1a19b;border-collapse:collapse;color:black; padding:10px;" colspan="3" align="right"><b>SubTotal:</b></td>
+<td style="border:2px solid #a1a19b;border-collapse:collapse;color:black; padding:10px;"><b>${order.totalPrice}</b></td>
+<tr>
+<td style="border:2px solid #a1a19b;border-collapse:collapse;color:black; padding:10px;" colspan="3" align="right"><b>OrderTotal:</b></td>
+<td style="border:2px solid #a1a19b;border-collapse:collapse;color:black; padding:10px;"><b>${order.totalPrice}</b></td>
+</tr>
+</table>
+</div>
+<footer style="padding:10px" align="center">&copy;2018 Spice Corner.</footer>
+</div>
+</body>
+</html>

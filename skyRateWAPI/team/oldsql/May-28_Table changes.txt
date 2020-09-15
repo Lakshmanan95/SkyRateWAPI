@@ -1,0 +1,11 @@
+alter table reviews add column OVERALL_RATE double(11,1) default 0 after delivery_speed;
+
+alter table business modify column ZIP varchar(25);
+CREATE TABLE `country`(
+`ID` INT(11) NOT NULL AUTO_INCREMENT,
+	`CODE` VARCHAR(2),
+	`NAME` VARCHAR(100),
+	primary key (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin; 
+
+alter table business add column COUNTRY varchar(45) after STATE;

@@ -1,0 +1,3 @@
+use skyrate;
+
+update  business set IMAGE_URL ='assets/img/building.jpg'

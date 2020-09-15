@@ -1,0 +1,5 @@
+alter table messenger add column OWNER_ID int(11) NOT NULL;
+
+
+ALTER TABLE `skyrate`.`business` ADD COLUMN `SEARCH_KEY` VARCHAR(255) NULL  AFTER `UPDATED_DATE` ;
+

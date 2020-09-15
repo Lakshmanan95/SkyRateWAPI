@@ -1,0 +1,3 @@
+use skyrate;
+
+alter table event_log add column IP_ADDRESS varchar(45) not null;

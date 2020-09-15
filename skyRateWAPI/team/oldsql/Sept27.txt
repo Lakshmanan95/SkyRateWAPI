@@ -1,0 +1,4 @@
+use skyrate;
+
+alter table business drop column AD_IMAGE_URL;
+alter table business add column AD_IMAGE_URL long;

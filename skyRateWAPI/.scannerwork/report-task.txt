@@ -1,0 +1,6 @@
+projectKey=sky_rateWAPI_95
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/sky_rateWAPI_95
+ceTaskId=AWPtyQ3lvB2HEtupq5Jx
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWPtyQ3lvB2HEtupq5Jx

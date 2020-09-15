@@ -1,0 +1,2 @@
+use skyrate;
+alter table business add column CREATED_BY varchar(100);

@@ -1,0 +1,30 @@
+use skyrate;
+
+
+
+CREATE TABLE `user_alerts` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ALERT_MSG` varchar(500) NOT NULL,
+  `ALERT_TYPE` int(11) NOT NULL DEFAULT '1',
+  `ALERT_FOR` varchar(45) DEFAULT NULL,
+  `START_DATE` datetime DEFAULT NULL,
+  `END_DATE` datetime DEFAULT NULL,
+  `TOTAL_REMINDER_TIMES` int(11) NOT NULL DEFAULT '1',
+  `REMINDER_FREQUENCY` int(11) DEFAULT NULL,
+  `USER_GROUP` int(11) DEFAULT NULL,
+  `USER_ID` int(11) DEFAULT NULL,
+  `ACTIVE` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`ID`)
+) 
+
+INSERT INTO `skyrate`.`user_alerts` (`ID`, `ALERT_MSG`, `ALERT_TYPE`, `ALERT_FOR`, `TOTAL_REMINDER_TIMES`, `REMINDER_FREQUENCY`) VALUES ('1', 'Please provide feedback', '1', 'Feedback', '3', '5');
+
+
+CREATE  TABLE `skyrate`.`user_alerts_response` (
+  `ID` INT NOT NULL AUTO_INCREMENT ,
+  `ALERT_ID` INT NOT NULL ,
+  `USER_ID` INT NOT NULL ,
+  `RESPONSE_YES` INT NULL ,
+  `RESPONSE_NO` INT NULL ,
+  `UPDATED_DATE` DATETIME NULL ,
+  PRIMARY KEY (`ID`) );

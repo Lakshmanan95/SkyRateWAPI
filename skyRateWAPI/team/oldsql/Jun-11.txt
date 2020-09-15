@@ -1,0 +1,4 @@
+use skyrate;
+
+alter table business_claim_mapping add column CREATED_DATE date;
+alter table business_claim_mapping add column LAST_UPDATED_DATE date;

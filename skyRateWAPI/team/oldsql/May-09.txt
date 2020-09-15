@@ -1,0 +1,2 @@
+use skyrate;
+alter table user add column CREATED_DATE date after PROFILE_IMAGE_URL;

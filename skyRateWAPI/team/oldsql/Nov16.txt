@@ -1,0 +1,10 @@
+use skyrate;
+
+alter table business add column CREATED_ID int(11);
+ALTER TABLE `skyrate`.`business` CHANGE COLUMN `CREATED_ID` `CREATED_ID` INT(11) NULL DEFAULT 0  ;
+
+set sql_safe_updates=0;
+update business set created_id=0
+
+
+ALTER TABLE `skyrate`.`business` ADD COLUMN `CREATED_DATE` DATE NULL  AFTER `CREATED_ID` ;

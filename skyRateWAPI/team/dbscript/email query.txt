@@ -1,0 +1,13 @@
+select  user.email,user.FIRST_NAME,M5.read_count from messenger inner join user on user.id = messenger.TO_ID 
+						left join (select conversation_id,count(M4.read_flag) as read_Count 
+						from messenger M4 where M4.READ_FLAG = 0  group by CONVERSATION_ID) M5 
+						 on M5.conversation_id = messenger.conversation_id 
+						 where  messenger.DATE_TIME >='11/19/2018' and messenger.READ_FLAG = 0 group by messenger.TO_ID
+
+
+select user.EMAIL,user.FIRST_NAME,M5.read_count from business 
+						inner join user on user.ID = business.USER_ID 
+						inner join reviews on reviews.BUSINESS_ID = business.ID 
+						left join (select count(id) as read_Count, business_id 
+						from reviews group by business_id) M5 
+                        on M5.business_id = business.ID where reviews.CREATED_DATE >= '11/19/2018'

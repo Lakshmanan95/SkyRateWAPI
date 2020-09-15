@@ -1,0 +1,9 @@
+use skyrate;
+
+CREATE TABLE `business_claim_mapping` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`BUSINESS_ID` int(11) NOT NULL,
+`USER_ID` int(11) NOT NULL,
+`APPROVAL` int(11) default 0,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=12899 DEFAULT CHARSET=latin1;

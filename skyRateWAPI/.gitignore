@@ -1,0 +1,9 @@
+/target/
+<<<<<<< HEAD
+.settings
+.classpath
+.project
+*.class
+location.properties
+=======
+>>>>>>> 8c718a4725dfd699b100a12703ccccc7a7768713

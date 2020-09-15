@@ -1,0 +1,19 @@
+alter table business add column INTERNATIONAL tinyint(1) default 1;
+alter table business add column AD_IMAGE_URL varchar(255);
+UPDATE business 
+    SET INTERNATIONAL = 0 
+    WHERE STATE = 'AL' or  STATE ='AK' or  STATE ='AZ' or  STATE ='AR';
+UPDATE business 
+    SET INTERNATIONAL = 0 
+    WHERE STATE = 'CA' or  STATE ='CO' or  STATE ='CT' or  STATE ='DE' or
+    STATE = 'FL' or  STATE ='GA' or  STATE ='HI' or  STATE ='ID' or
+    STATE = 'IL' or  STATE ='IN' or  STATE ='IA' or  STATE ='KS' or
+    STATE = 'KY' or  STATE ='LA' or  STATE ='ME' or  STATE ='MD' or 
+     STATE = 'MA' or  STATE ='MI' or  STATE ='MN' or  STATE ='MS' or
+      STATE = 'MO' or  STATE ='MT' or  STATE ='NE' or  STATE ='NV' or
+       STATE = 'NH' or  STATE ='NJ' or  STATE ='NM' or  STATE ='NY'or 
+        STATE = 'NC' or  STATE ='ND' or  STATE ='OH' or  STATE ='OK' or
+         STATE = 'OR' or  STATE ='PA' or  STATE ='RI' or  STATE ='SC' or
+          STATE = 'SD' or  STATE ='TN' or  STATE ='TX' or  STATE ='UT' or 
+           STATE = 'VT' or  STATE ='VA' or  STATE ='WA' or  STATE ='WV' or
+            STATE = 'WI' or  STATE ='WY'  ;

@@ -1,0 +1,4 @@
+use skyrate;
+
+alter table business add column IMAGE_URL varchar(255) default 'assets/img/building.png';
+alter table user modify column PROFILE_IMAGE_URL VARCHAR(255) DEFAULT 'assets/img/boyUser.png';

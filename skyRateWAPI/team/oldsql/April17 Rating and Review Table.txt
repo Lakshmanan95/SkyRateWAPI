@@ -1,0 +1,43 @@
+use skyrate;
+CREATE TABLE `rating` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `BUSINESS_ID` INT(11) NOT NULL,
+  `RATING_ID` INT(11) default NULL,
+  `USER_ID` int(11) NOT NULL,
+  `CREATED_DATE` varchar(11) default NULL,
+  `LAST_MODIFIED_DATE`  varchar(11) default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `business_rating_summary` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `BUSINESS_ID` INT(11) NOT NULL,
+  `REVIEW_COUNT` INT(11) default NULL,
+  `RATING_COUNT` INT(11) default NULL,
+`RATING_AVGERAGE` varchar(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+CREATE TABLE `rating_description` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `RATING_NO` int(11) NOT NULL,
+  `RATING_DESCRIPTION` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `reviews` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `BUSINESS_ID` int(11) NOT NULL,
+  `REVIEW` longtext,
+  `USER_ID` int(11) NOT NULL,
+  `APPROVED` tinyint(1) DEFAULT '0',
+  `RECOMMENDED` tinyint(1) default '0',
+  `CREATED_DATE` varchar(11) DEFAULT NULL,
+  `LAST_MODIFIED_DATE` varchar(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+
+
+alter table business change column ADDRESS_2 ADDRESS2 varchar(255);
+alter table business change column ADDRESS_3 ADDRESS3 varchar(255);
+alter table business_rating_summary change column RATING_AVGERAGE RATING_AVERAGE varchar(11);

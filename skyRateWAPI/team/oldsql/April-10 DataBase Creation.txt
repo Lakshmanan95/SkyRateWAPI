@@ -1,0 +1,7 @@
+create database skyrate;
+
+create user 'skyrate'@'localhost' identified by 'skyrate';
+
+grant all privileges on skyrate.* to skyrate@localhost;
+
+

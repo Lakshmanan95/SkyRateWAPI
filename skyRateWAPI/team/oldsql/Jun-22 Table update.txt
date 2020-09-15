@@ -1,0 +1,3 @@
+use skyrate;
+update user set PROFILE_IMAGE_URL = "assets/img/boyUser.png";
+update business set IMAGE_URL = "assets/img/building.png";

@@ -1,0 +1,11 @@
+use skyrate;
+update business set category = REPLACE(category, 'MRO Services','Airframe');
+
+CREATE TABLE `business_category_mapping` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `BUSINESS_ID` int(11) NOT NULL,
+  `CATEGORY_ID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+alter table user_activity add column USER_REFRESH_TOKEN varchar(45);

@@ -1,0 +1,5 @@
+use skyrate;
+
+
+alter table business add column OVERVIEW longtext;
+alter table business add column CAPABILITIES longtext;

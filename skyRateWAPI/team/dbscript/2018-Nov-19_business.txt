@@ -1,0 +1,3 @@
+use skyrate;
+
+alter table business add column EXISTING_BUSINESS int(1) default 0;

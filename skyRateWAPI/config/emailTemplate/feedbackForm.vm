@@ -1,0 +1,39 @@
+
+<html>
+<style>
+div.a {
+    text-transform: uppercase;
+}
+</style>
+<body>
+<div class="container" style= "margin-left:5%; margin-right:5%; font-size:1.05em;  border:2px solid black; width:80%">
+<header>
+
+<div class="container" style="    background-color: #233e9e;>
+
+<img src="www.aviationrating.com/assets/img/Logo.png"  alt="$application" />
+</div>
+</header>
+<hr  style="margin-top:0px">
+
+<div class="container" style="padding:10px;">
+<b>Feedback from below user,</b>
+
+<div style="padding-top:10px;padding-bottom:10px;">
+<span style="margin-top:5px;">User Name: $name</span><br>
+<span style="margin-top:5px;">Email: $email</span><br>
+<span style="margin-top:5px;">$phone</span><br>
+<span style="margin-top:5px;">Message: $message</span><br>
+
+
+</div>
+
+
+<b>Regards,</b><br>
+<b>$application Team</b>
+</div>
+<hr>
+<footer style="padding:10px" align="center">&copy;2018 $application.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+use skyrate;
+
+truncate table reviews;
+truncate table business_rating_summary;
+
+alter table reviews modify column PRICING int(11) default 0;
+
+alter table reviews modify column DELIVERY_SPEED int(11) default 0;

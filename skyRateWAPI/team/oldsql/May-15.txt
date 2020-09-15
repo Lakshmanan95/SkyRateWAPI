@@ -1,0 +1,2 @@
+use skyrate;
+alter table business add column ACTIVE int(11) default 0;

@@ -1,0 +1,3 @@
+use skyrate;
+
+alter table user add column PROFILE_IMAGE_URL long;

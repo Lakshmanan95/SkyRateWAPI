@@ -1,0 +1,68 @@
+use skyrate;
+
+CREATE TABLE `address_state` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `STATE` varchar(45) DEFAULT NULL,
+  `ABBREVIATION` varchar(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (1,'Alabama','AL');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (2,'Alaska','AK');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (3,'American Samoa','AS');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (4,'Arizona','AZ');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (5,'Arkansas','AR');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (6,'California','CA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (7,'Colorado','CO');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (8,'Connecticut','CT');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (9,'Delaware','DE');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (10,'District Of Columbia','DC');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (11,'Federated States Of Micronesia','FM');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (12,'Florida','FL');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (13,'Georgia','GA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (14,'Guam','GU');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (15,'Hawaii','HI');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (16,'Idaho','ID');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (17,'Illinois','IL');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (18,'Indiana','IN');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (19,'Iowa','IA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (20,'Kansas','KS');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (21,'Kentucky','KY');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (22,'Louisiana','LA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (23,'Maine','ME');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (24,'Marshall Islands','MH');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (25,'Maryland','MD');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (26,'Massachusetts','MA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (27,'Michigan','MI');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (28,'Minnesota','MN');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (29,'Mississippi','MS');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (30,'Missouri','MO');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (31,'Montana','MT');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (32,'Nebraska','NE');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (33,'Nevada','NV');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (34,'New Hampshire','NH');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (35,'New Jersey','NJ');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (36,'New Mexico','NM');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (37,'New York','NY');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (38,'North Carolina','NC');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (39,'North Dakota','ND');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (40,'Northern Mariana Islands','MP');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (41,'Ohio','OH');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (42,'Oklahoma','OK');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (43,'Oregon','OR');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (44,'Palau','PW');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (45,'Pennsylvania','PA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (46,'Puerto Rico','PR');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (47,'Rhode Island','RI');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (48,'South Carolina','SC');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (49,'South Dakota','SD');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (50,'Tennessee','TN');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (51,'Texas','TX');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (52,'Utah','UT');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (53,'Vermont','VT');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (54,'Virgin Islands','VI');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (55,'Virginia','VA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (56,'Washington','WA');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (57,'West Virginia','WV');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (58,'Wisconsin','WI');
+INSERT INTO `address_state` (`ID`,`STATE`,`ABBREVIATION`) VALUES (59,'Wyoming','WY');

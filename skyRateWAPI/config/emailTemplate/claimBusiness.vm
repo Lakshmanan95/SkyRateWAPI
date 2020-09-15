@@ -1,0 +1,40 @@
+
+<html>
+<style>
+div.a {
+    text-transform: uppercase;
+}
+</style>
+<body>
+<div class="container" style= "margin-left:5%; margin-right:5%; font-size:1.05em;  border:2px solid black; width:80%">
+<header>
+
+<div class="container" style="    background-color: #233e9e;>
+
+<img src="http://www.aviationrating.com/assets/img/Logo.png"  alt="AviationRating" />
+</div>
+</header>
+<hr  style="margin-top:0px">
+
+<div class="container" style="padding:10px;">
+<b>Dear,</b>
+
+<div style="padding-top:10px;">
+Please <a href="$url">login</a> to approve/reject business claim.<br>
+
+Business: $business <br>
+User : $user
+
+</div>
+
+<div style="padding-top: 10px; padding-bottom: 10px;">
+<span style="font-size:12px;">This is a system generated e-mail and please do not reply.</span><br>
+</div>
+<b>Regards,</b><br>
+<b>AviationRating Team</b>
+</div>
+<hr>
+<footer style="padding:10px" align="center">&copy;2018 AviationRating.</footer>
+</div>
+</body>
+</html>

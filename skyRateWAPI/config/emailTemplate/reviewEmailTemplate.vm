@@ -1,0 +1,26 @@
+<html>
+<body>
+<div class="container" style= "margin-left:5%; margin-right:5%; font-size:1.05em;  border:2px solid black; width:80%">
+<header>
+
+<div class="container" style="    background-color: #233e9e;>
+
+<img src="http://www.aviationrating.com/assets/img/Logo.png"  alt="$application" />
+</div>
+</header>
+<hr  style="margin-top:0px">
+
+<div class="container" style="padding:10px;">
+<b>Hi $firstName</b>
+<br>
+$readCount new reviews posted to your business. Click here to <a href="$url">login.</a>
+<div style="padding-top: 10px; padding-bottom: 10px;"><span style="font-size:12px;">This is a system generated e-mail and please do not reply. </span></div>
+
+<b>Regards,</b><br>
+<b>$application Team</b>
+</div>
+<hr>
+<footer style="padding:10px" align="center">&copy;2018 $application.</footer>
+</div>
+</body>
+</html>

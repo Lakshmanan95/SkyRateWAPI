@@ -1,0 +1,11 @@
+use skyrate;
+
+
+alter table business add column USER_ID int(11) default '0';
+ CREATE TABLE `rejected_business` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `BUSINESS_ID` int(11) NOT NULL,
+  `USER_ID` int(11) NOT NULL,
+  `CREATED_DATE` date DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1; 

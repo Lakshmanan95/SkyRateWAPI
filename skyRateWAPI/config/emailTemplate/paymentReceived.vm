@@ -1,0 +1,25 @@
+<html>
+<body>
+<div class="container" style= "margin-left:5%; margin-right:5%;  border:2px solid black; width:80%">
+<header>
+
+<div class="container">
+<h1 style="margin-top:5px;margin-bottom:5px;">
+Spice Corner</h1>
+</div>
+</header>
+<hr>
+
+<div class="container" style="padding:10px;">
+<b>Hi $user.firstName $user.lastName</b>
+<p>Thank you for the recent payment you have made to the <b>$payment.paymentAgent</b> for the sum of <b>$ $payment.payment</b> for the order <b>#$payment.orderId</b></p>
+
+<p>Purchase your product by login to your account.</p>
+<b>Regards,</b><br>
+<b>Spice Corner Team</b>
+</div>
+<hr>
+<footer style="padding:10px" align="center">&copy;2018 Spice Corner.</footer>
+</div>
+</body>
+</html>

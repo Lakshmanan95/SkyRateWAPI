@@ -1,0 +1,4 @@
+use skyrate;
+
+
+UPDATE business SET zip =  TRIM(TRAILING '.0' FROM zip) ;

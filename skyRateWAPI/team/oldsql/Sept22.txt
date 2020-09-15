@@ -1,0 +1,10 @@
+CREATE TABLE `contact_info` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `NAME_OF_SERVICE` varchar(255) DEFAULT NULL,
+  `PHONE_NUMBER` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=latin1;
+
+
+
+alter table feedback_form add column FEEDBACK_DATE date;

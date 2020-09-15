@@ -1,0 +1,11 @@
+use skyrate;
+
+CREATE TABLE `contact_subject` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `SUBJECT` long DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+INSERT INTO `contact_subject` (`ID`,`SUBJECT`) VALUES (1,'Suggestions/Complaints');
+INSERT INTO `contact_subject` (`ID`,`SUBJECT`) VALUES (2,'Wrongly claimed business');
+INSERT INTO `contact_subject` (`ID`,`SUBJECT`) VALUES (3,'Others');

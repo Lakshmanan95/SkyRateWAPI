@@ -1,0 +1,2 @@
+alter table messenger add column DELETE_FLAG int(1) default 0;
+alter table messenger add column UNIQUE_MESSAGE_ID varchar(100);
